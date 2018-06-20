@@ -4,9 +4,9 @@ let container = document.getElementById('container');
 
 //DATA..................................... .................................................................................................
 let attacks=["ATTACKS","Thunder Snake","Lightning Bats","Storm Shark","Kraken","Triton","Stormzilla", "Storm Lord","Tempest","Sirens"];
-let shields=["SHEILDS","Storm","Thermic","Dream"];
-let blades=["BLADES","Storm","Elemental"]; 
-let traps = ["TRAPS","Storm","Feint"];
+let shields=["SHEILDS","Storm Shield","Thermic Shield","Dream Shield"];
+let blades=["BLADES","Storm Blade","Elemental Blade"]; 
+let traps = ["TRAPS","Storm Trap","Feint"];
 let deck = [blades, attacks, traps, shields];	// modularize deck
 
 let HISTORY = [];				// TEMP STORAGE 			
