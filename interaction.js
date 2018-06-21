@@ -18,14 +18,15 @@ for(k=0; k<deck.length; k++) {
 	let subdeck = deck[k];	// where SUBDECKS = blades, attacks, etc.
 	// set TITLE of subdecks accordingly
 	let title = document.createElement('h1');						
-	title.textContent = subdeck[0];	title.classList.add('title'); //CSS	
+	title.textContent = subdeck[0];	title.classList.add('header'); 		//CSS	
 	// CONTAINER for buttons
 	let col = document.createElement('div');
 	col.classList.add("col");
 
 	// Populate Subdeck-Container with CARDS	
 	for(r=1; r<subdeck.length; r++) { 
-		let card = document.createElement('button');		
+		let card = document.createElement('button');	
+		card.classList.add('card');							// CSS	
 		let name_card = subdeck[r];	
 		card.textContent = name_card;						// label cards
 
@@ -43,6 +44,7 @@ for(k=0; k<deck.length; k++) {
 
 // MODULARIZE DATA  
 let pusher = document.createElement('button');
+pusher.id = "pusher";
 pusher.textContent = "PUSH";
 
 let DISPLAY = document.createElement('ol');		// store session data

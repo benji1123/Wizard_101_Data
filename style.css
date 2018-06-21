@@ -1,0 +1,42 @@
+html {
+	margin-left: 50px;
+	background-color: lightgrey;
+}
+
+#pusher {
+	padding: 30px;
+	border: none;
+	margin-top: 50px;
+
+	background-color: lightgreen;
+	color: black;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.header {
+	margin-top: 50px;
+	font-family: "Helvetica";
+	font-size: 30px;
+	color: black;
+}
+
+.card {
+	padding: 20px;
+	border: 30px;
+	margin: 2px;
+
+	color: black;
+	background-color: #ccccff;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+
+ol {
+	margin-top: 100px;
+	font-size: 18px;
+	font-family: "Helvetica";
+	color: darkred;
+}
+
