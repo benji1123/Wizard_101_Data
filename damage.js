@@ -2,10 +2,10 @@ let attacks=["ATTACKS","Thunder Snake","Lightning Bats","Storm Shark","Kraken","
 let damage=[0,125,265,405,550,835,690,690,10000000,880,1030];
 
 let blades=["BLADES","Storm Blade","Elemental Blade"]; 
-let blade_mult = [0,.30,.35];
+let blade_mult = [0,1.30,1.35];
 
 let traps = ["TRAPS","Storm Trap","Windstorm","Feint"];
-let trap_mult = [0,.25,.2,.7]
+let trap_mult = [0,1.25,1.2,1.7]
 
 let deck = [blades, attacks, traps];	// modularize deck
 
@@ -14,7 +14,7 @@ let deck = [blades, attacks, traps];	// modularize deck
 let attack = "";
 let charm = [];
 let base_damage = 0;
-let multiplier = 1.00;
+let multiplier = 1.81;  //base 81% increase
 
 
 //BUTTONS....................................................................................................................................
@@ -78,7 +78,7 @@ calculator.addEventListener('click', () => {
 
 	//reset calculator
 	base_damage=0;
-	multiplier=1;
+	multiplier=1.81;	//base 81% increase
 	charmm=[];
 });
 container.append(calculator);
