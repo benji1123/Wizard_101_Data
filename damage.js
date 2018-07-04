@@ -40,6 +40,8 @@ for(let k=0; k<deck.length; k++) {
 			card.addEventListener('click', () => {
 				base_damage = damage[r];
 				attack = name_card;
+				card.classList.add
+				card.style.backgroundColor = "#AFEEEE";
 			});
 
 		}
@@ -49,6 +51,7 @@ for(let k=0; k<deck.length; k++) {
 			card.addEventListener('click', () => {
 				multiplier = multiplier + blade_mult[r];
 				charm.push(name_card);
+				card.style.backgroundColor = "#AFEEEE";
 			});
 		}
 
@@ -56,6 +59,7 @@ for(let k=0; k<deck.length; k++) {
 			card.addEventListener('click', () => {
 				multiplier = multiplier + trap_mult[r];
 				charm.push(name_card);
+				card.style.backgroundColor = "#AFEEEE";
 			});
 		}
 		col.appendChild(card)								
@@ -80,5 +84,14 @@ calculator.addEventListener('click', () => {
 	base_damage=0;
 	multiplier=1.81;	//base 81% increase
 	charmm=[];
+
+	//reset button colors
+	let butts = document.getElementsByClassName("card");
+	for(let c=0; c<butts.length; c++)
+	{
+		butts[c].style.backgroundColor = "#d3d3d3";
+	}
+
+
 });
 container.append(calculator);
